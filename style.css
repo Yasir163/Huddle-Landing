@@ -6,7 +6,7 @@
 .header{
     background: url(images/bg-hero-desktop.svg);
     object-fit: cover;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
 }
 .container{
     width: 90%;
@@ -162,6 +162,7 @@
     flex-direction: column;
     gap: 50px;
     padding: 2rem 0;
+    text-align: center;
 }
 .community-main h2{
     font-family: 'Poppins',sans-serif;
@@ -205,6 +206,11 @@ li{
     gap: 20px;
     max-width: 350px;
 }
+.social{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .social-img + .social-img {
     margin-left: 10px;
 }
@@ -222,5 +228,59 @@ li{
   @media (max-width:768px){
     .header{
         background: url(images/bg-hero-mobile.svg);
+    }
+    .header-details{
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-text{
+        max-width: 370px;
+    }
+    .header-image-container{
+        width: 75%;
+    }
+
+    /* grow together */
+
+    .grow-together{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    /* flow Conversation */
+
+    .flow-conversation{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* your user */
+
+    .your-user{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    /* community main */
+
+    .community-main{
+        gap: 20px;
+    }
+    .container-2{
+        width: 90%;
+    }
+
+    /* footer */
+
+    .footer-list{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .list{
+        gap: 15px;
+    }
+    .social{
+        text-align: center;
+        gap: 15px;
     }
   }
